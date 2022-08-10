@@ -1,5 +1,5 @@
 @media (max-width: 480px) {
-    .container {
+    body {
         width: var(--container-width-sm);
         margin: 0 auto;
     }

@@ -1,3 +1,10 @@
+@media (max-width: 480px) {
+    .container {
+        width: var(--container-width-sm);
+        margin: 0 auto;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,18 +40,16 @@ body {
     line-height: 1.7;
     color: var(--color-white);
     background: var(--color-bg);
-    min-width: 480px;
 }
+
 
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
-    min-width: 480px;
 }
 
 section {
     padding: 6rem 0;
-    min-width: 480px;
 }
 
 section h2 {
@@ -84,7 +89,6 @@ img {
     width: 100%;
     display: block;
     object-fit: cover;
-    min-width: 480px;
 }
 
 .btn {
@@ -131,7 +135,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 480px;
 }
 
 nav button {
@@ -161,7 +164,6 @@ header {
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
-    min-width: 480px;
 }
 
 .header__container {
@@ -371,3 +373,5 @@ header {
     top: -1.5rem;
     transform: rotate(45deg);
 }
+
+    

@@ -1,0 +1,57 @@
+/* ============= ACHIEVEMENTS ============= */
+.about__ach {
+    margin-top: 3rem;
+}
+
+.about__ach-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about__ach-right {
+    margin-right: 4rem;
+    gap: 2rem;
+}
+
+.about__ach-right p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.ach__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.ach__card {
+    background: var(--color-bg1);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.ach__card:hover {
+    background: var(--color-bg2);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.ach__icon {
+    background: var(--color-success);
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.ach__card:nth-child(2) .ach__icon {
+    background: var(--color-warning);
+}
+
+.ach__card:nth-child(3) .ach__icon {
+    background: var(--color-danger);
+}
+

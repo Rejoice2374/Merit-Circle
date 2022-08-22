@@ -11,11 +11,10 @@
 }
 
 .about__ach-right {
-    margin-right: 4rem;
     gap: 2rem;
 }
 
-.about__ach-right p {
+.about__ach-right > p {
     margin: 1.6rem 0 2.5rem;
 }
 
@@ -55,3 +54,131 @@
     background: var(--color-danger);
 }
 
+
+/* ============= TEAM INFO ============= */
+.team__members {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+    margin: 1rem 0 0;
+    width: 100%;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 2rem 5rem 0;
+}
+
+.team {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.team__img {
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+    align-items: center;
+}
+
+.team__img img {
+    filter: saturate(0);
+}
+
+.team__img:hover img {
+    filter: saturate(1);
+}
+
+.team__info * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team__socials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.team__socials {
+    padding: 1rem;
+}
+
+.team:hover .team__socials {
+    right: 0;
+}
+
+
+
+/* ============= TABLET ============= */
+
+@media screen and (max-width: 1024px) {
+    .about__ach {
+        margin-top: 2rem;
+    }
+
+    .about__ach-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about__ach-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .teams {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin: 2rem 2rem 0;
+    }
+
+    .team {
+        padding: 1rem;
+    }
+
+    .team__info * {
+        font-size: 0.8rem;
+        margin-top: 0.8rem;
+    }
+}
+
+/* ============= SMART-PHONES ============= */
+
+@media screen and (max-width: 600px) {
+    .ach__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .teams {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .team {
+        padding: 0;
+    }
+
+    .team__info p {
+        margin-bottom: 1rem;
+    }
+}
